@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(47, 88%, 63%);
+    min-height: 100vh;
+}
+
+.content {
+    background-color: hsl(0, 0%, 100%);
+    margin: 10rem auto;
+    width: 400px;
+    height: 500px;
+    box-shadow: 10px 10px black;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+h1 {
+    background-color: hsl(47, 88%, 63%);
+    font-size: 1rem;
+    padding: 0.25em 0.5em;
+    width: 80px;
+    border-radius: 5px;
+}
