@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Figtree:ital,wght@0,300..900;1,300..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 15px;
 }
 
 section {
@@ -14,15 +16,16 @@ section {
 }
 
 .container {
-    background-color: papayawhip;
     display: flex;
-    flex-basis: 50rem;
+    flex-basis: 60rem;
+    flex-shrink: 0;
 }
 
 .container > * {
     flex: 1;
     display: flex;
     flex-direction: column;
+    gap: 2em;
 }
 
 .sedans-container {
@@ -42,8 +45,112 @@ section {
 div p {
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 15px;
+    font-family: "Lexend Deca", serif;
+    font-weight: 400;
+    margin: 0 2rem;
 }
 
 div h1 {
     color: hsl(0, 0%, 95%);
+    font-family: "Big Shoulders Display", serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-left: 2rem;
+}
+
+img {
+    width: 70px;
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+}
+
+.button {
+    width: 45%;
+    padding: 1rem;
+    border-radius: 25px;
+    border: none;
+    margin: 3rem 2rem 2.5rem;
+    background-color: white;
+}
+
+.luxury-container .button {
+    margin-top: 4.1rem;
+    margin-bottom: 0;
+    color: hsl(179, 100%, 13%);
+    font-family: "Lexend Deca", serif;
+}
+
+.luxury-container .button:hover {
+    background-color: hsl(179, 100%, 13%);
+    border: solid white;
+    color: white;
+}
+
+.suvs-container .button {
+    color: hsl(184, 100%, 22%);
+    font-family: "Lexend Deca", serif;
+}
+
+.suvs-container .button:hover {
+    background-color: hsl(184, 100%, 22%);
+    border: solid white;
+    color: white;
+}
+
+.sedans-container .button {
+    color: hsl(31, 77%, 52%);
+    font-family: "Lexend Deca", serif;
+}
+
+.sedans-container .button:hover {
+    background-color: hsl(31, 77%, 52%);
+    border: solid white;
+    color: white;
+}
+
+.attribution {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.attribution p {
+    font-family: "Lexend Deca", serif;
+}
+
+.attribution a:link, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.attribution a:hover {
+    font-weight: 800;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        flex-basis: 300px;
+        flex-shrink: 0;
+    }
+
+    .sedans-container {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .luxury-container {
+        border-radius: 0 0 10px 10px;
+    }
+
+    .luxury-container .button {
+        margin-top: 3rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .attribution {
+        margin-top: 3rem;
+    }
+
 }
